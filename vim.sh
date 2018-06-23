@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo '[Install languages (for vim):]'
 sudo emerge --ask dev-lang/ruby dev-lang/lua dev-lang/luajit
 
