@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# do not execute this script at CLI login
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  echo "please execute after you can be able to login with GUI."
-  exit
-fi
-
-sudo emerge -av             \
-   dev-lang/ruby            \
-   dev-lang/lua             \
-   dev-lang/luajit          \
-   www-client/google-chrome 
+sudo emerge -av              \
+   dev-lang/ruby             \
+   dev-lang/lua              \
+   dev-lang/luajit           \
+   dev-vcs/git               \
+   www-client/google-chrome  \
+   sys-kernel/linux-firmware \
+   x11-wm/xmonad             \
+   x11-terms/rxvt-unicode
 
