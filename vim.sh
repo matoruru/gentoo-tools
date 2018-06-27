@@ -21,31 +21,49 @@ sudo echo Authentication succeeded!
 
 echo  '[Install vim:]'
 cd    ~/repositories
-git   clone https://github.com/vim/vim.git
-cd    vim/src
 
-sudo ./configure --enable-multibyte             \
-                 --enable-luainterp=dynamic     \
-                 --enable-perlinterp=dynamic    \
-                 --enable-pythoninterp=dynamic  \
-                 --enable-python3interp=dynamic \
-                 --enable-rubyinterp=dynamic    \
-                 --enable-fontset               \
-                 --enable-fail-if-missing       \
-                 --with-luajit                  \
-                 --with-features=huge           \
-                 && sudo make && sudo make install
+if [ -d vim ]; then
+   echo "vim repo is exist!"
+   echo "just update vim repo..."
+   cd vim && git pull && cd ..
+else
+   echo "vim repo is not exist..."
+   git clone https://github.com/vim/vim.git
+fi
 
-# Set alias for multitably open
-echo                       >> ~/.bashrc
-echo  "alias vim='vim -p'" >> ~/.bashrc
-echo                       >> ~/.fishrc
-echo  "alias vim='vim -p'" >> ~/.fishrc
+if [ -f /usr/local/bin/vim ]; then
+   echo "vim binary is exist!"
+   echo "just update vim binary..."
+   VIM_PREVIOUSVER=$( vim --version | grep patches )
+   cd vim/src
+   sudo make uninstall
+   sudo make distclean
+   cd ../..
+else
+   VIM_PREVIOUSVER="NOT INSTALLED"
+fi
 
-# Clone my vimrc and create symbolic link
-cd  ~/repositories
-git clone https://github.com/matoruru/dotfiles.git
-ln  -s ~/repositories/dotfiles/.vimrc ~/.vimrc
+cd vim/src
+./configure                       \
+   --enable-multibyte             \
+   --enable-luainterp=dynamic     \
+   --enable-perlinterp=dynamic    \
+   --enable-pythoninterp=dynamic  \
+   --enable-python3interp=dynamic \
+   --enable-rubyinterp=dynamic    \
+   --enable-fontset               \
+   --enable-fail-if-missing       \
+   --with-luajit                  \
+   --with-features=huge           \
+   && make && sudo make install
+
+VIM_CURRENTVER=$( vim --version | grep patches )
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!  VIM UPDATE INFO  !!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "  " Previous Version: $VIM_PREVIOUSVER
+echo "  " Current  Version: $VIM_CURRENTVER
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 # Install plugin manager for vim, dein
 mkdir -p           ~/.cache/dein
