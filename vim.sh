@@ -1,7 +1,23 @@
 #!/bin/bash
 
 echo '[Install languages (for vim):]'
-sudo emerge --ask dev-lang/ruby dev-lang/lua dev-lang/luajit
+
+# check whether necessary files is exist or not
+NECESSARY_FILES=()
+NECESSARY_FILES+=( "/usr/bin/lua"    )
+NECESSARY_FILES+=( "/usr/bin/luajit" )
+NECESSARY_FILES+=( "/usr/bin/ruby"   )
+NECESSARY_FILES+=( "/usr/bin/perl"   )
+for file in ${NECESSARY_FILES[@]}
+do
+   if [ ! -f $file ]; then
+      echo "  !! $file is not exist..."
+      echo "  !! please solve this problem, and then try again."
+      exit
+   fi
+done
+
+sudo echo Authentication succeeded!
 
 echo  '[Install vim:]'
 cd    ~/repositories
