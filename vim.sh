@@ -66,7 +66,9 @@ echo "  " Current  Version: $VIM_CURRENTVER
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 # Install plugin manager for vim, dein
-mkdir -p           ~/.cache/dein
-cd                 ~/.cache/dein
-curl  https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh    installer.sh ~/.cache/dein
+if [ ! -d $HOME/.cache/dein ]; then
+   mkdir -p $HOME/.cache/dein
+   cd       $HOME/.cache/dein
+   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+   sh installer.sh ~/.cache/dein
+fi
