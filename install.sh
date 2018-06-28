@@ -8,5 +8,6 @@ sudo emerge -av              \
    www-client/google-chrome  \
    sys-kernel/linux-firmware \
    x11-wm/xmonad             \
-   x11-terms/rxvt-unicode
+   x11-terms/rxvt-unicode    \
+   x11-misc/dmenu
 
