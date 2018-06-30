@@ -14,14 +14,15 @@ if [ ! -d ~/repositories ]; then
    echo ~/repositories dir does not exist!
    exit
 fi
-
-
 echo fish and its config dir exist!
 echo continue installing fisherman...
-echo
 
 echo "   [Install fisherman:]"
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+if [ -f ~/.config/fish/functions/fisher.fish ]; then
+   echo fisher.fish is installed already!
+else
+   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fi
 
 echo "   [Install yimmy theme:]"
 if [ -d ~/repositories/theme-yimmy ]; then
