@@ -61,8 +61,8 @@ VIM_CURRENTVER=$( vim --version | grep patches )
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "!!!!!!!!!!!!!  VIM UPDATE INFO  !!!!!!!!!!!!!"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "  " Previous Version: $VIM_PREVIOUSVER
-echo "  " Current  Version: $VIM_CURRENTVER
+echo "  Previous Version:" $VIM_PREVIOUSVER
+echo "  Current  Version:" $VIM_CURRENTVER
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 # Install plugin manager for vim, dein
