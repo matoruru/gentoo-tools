@@ -31,6 +31,3 @@ if [ -d ~/repositories/theme-yimmy ]; then
 fi
 cd ~/repositories
 git clone https://github.com/oh-my-fish/theme-yimmy.git
-echo                                                 >> ~/.fishrc
-echo '# Set yimmy theme'                             >> ~/.fishrc
-echo '. ~/repositories/theme-yimmy/fish_prompt.fish' >> ~/.fishrc
