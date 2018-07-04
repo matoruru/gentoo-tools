@@ -4,6 +4,7 @@ sudo emerge -avD              \
    dev-lang/ruby              \
    dev-lang/lua               \
    dev-lang/luajit            \
+   dev-lang/perl              \
    dev-java/groovy            \
    dev-vcs/git                \
    www-client/google-chrome   \
