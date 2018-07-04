@@ -11,5 +11,6 @@ sudo emerge -avD              \
    media-gfx/feh              \
    x11-wm/xmonad              \
    x11-terms/rxvt-unicode     \
+   x11-misc/lightdm           \
    x11-misc/dmenu
 
