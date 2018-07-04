@@ -25,3 +25,32 @@ sudo emerge -avD              \
    x11-misc/dmenu             \
    layman
 
+# check whether necessary files is exist or not
+NECESSARY_FILES=()
+NECESSARY_FILES+=( "/usr/bin/ruby"   )
+NECESSARY_FILES+=( "/usr/bin/lua"    )
+NECESSARY_FILES+=( "/usr/bin/luajit" )
+NECESSARY_FILES+=( "/usr/bin/groovy"   )
+NECESSARY_FILES+=( "/usr/bin/git"   )
+NECESSARY_FILES+=( "/usr/bin/feh"   )
+NECESSARY_FILES+=( "/usr/bin/xmonad"   )
+NECESSARY_FILES+=( "/usr/bin/urxvt"   )
+NECESSARY_FILES+=( "/usr/bin/dmenu"   )
+for file in ${NECESSARY_FILES[@]}
+do
+   if [[ ! -f $file ]]; then
+      echo2log "$file is not exist..."
+   else
+      echo     "$file is exist!"
+   fi
+done
+
+#if [[ -f /usr/bin/layman ]]; then
+#   echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
+#   sudo layman -L
+#   sudo layman -a TAJJADA
+#else
+#   echo2log "/usr/bin/layman is not exist..."
+#fi
+
+echo INPORTANT!! just created ~/gentoo-tools-failed-log !
