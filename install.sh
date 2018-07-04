@@ -12,5 +12,6 @@ sudo emerge -avD              \
    x11-wm/xmonad              \
    x11-terms/rxvt-unicode     \
    x11-misc/lightdm           \
-   x11-misc/dmenu
+   x11-misc/dmenu             \
+   layman
 
