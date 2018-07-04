@@ -1,5 +1,14 @@
 #!/bin/bash
 
+function echo2log {
+   echo $1 >> ~/gentoo-tools-failed-log
+}
+
+if [[ -f $HOME/gentoo-tools-install-log ]]; then
+   rm ~/gentoo-tools-failed-log
+fi
+touch ~/gentoo-tools-failed-log
+
 sudo emerge -avD              \
    dev-lang/ruby              \
    dev-lang/lua               \
