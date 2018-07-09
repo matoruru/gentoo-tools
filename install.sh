@@ -16,6 +16,7 @@ sudo emerge -avD              \
    dev-lang/perl              \
    dev-java/groovy            \
    dev-vcs/git                \
+   app-shells/fish            \
    www-client/google-chrome   \
    sys-kernel/linux-firmware  \
    media-gfx/feh              \
@@ -32,6 +33,7 @@ NECESSARY_FILES+=( "/usr/bin/lua"    )
 NECESSARY_FILES+=( "/usr/bin/luajit" )
 NECESSARY_FILES+=( "/usr/bin/groovy"   )
 NECESSARY_FILES+=( "/usr/bin/git"   )
+NECESSARY_FILES+=( "/bin/fish"   )
 NECESSARY_FILES+=( "/usr/bin/feh"   )
 NECESSARY_FILES+=( "/usr/bin/xmonad"   )
 NECESSARY_FILES+=( "/usr/bin/urxvt"   )
