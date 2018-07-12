@@ -22,6 +22,7 @@ sudo emerge -avD              \
    sys-kernel/linux-firmware  \
    media-gfx/feh              \
    x11-wm/xmonad              \
+   x11-apps/xinput            \
    x11-terms/rxvt-unicode     \
    x11-misc/lightdm           \
    x11-misc/dmenu             \
@@ -41,6 +42,7 @@ NECESSARY_FILES+=( "/usr/bin/google-chrome-stable"   )
 NECESSARY_FILES+=( "/bin/fish"                       )
 NECESSARY_FILES+=( "/usr/bin/feh"                    )
 NECESSARY_FILES+=( "/usr/bin/xmonad"                 )
+NECESSARY_FILES+=( "/usr/bin/xinput"                 )
 NECESSARY_FILES+=( "/usr/bin/urxvt"                  )
 NECESSARY_FILES+=( "/usr/bin/dmenu"                  )
 NECESSARY_FILES+=( "/usr/bin/layman"                 )
