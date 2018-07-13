@@ -19,7 +19,6 @@ sudo emerge -avD              \
    app-shells/fish            \
    app-misc/sl                \
    www-client/google-chrome   \
-   sys-kernel/linux-firmware  \
    media-gfx/feh              \
    x11-wm/xmonad              \
    x11-apps/xinput            \
