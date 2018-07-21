@@ -54,12 +54,4 @@ do
    fi
 done
 
-#if [[ -f /usr/bin/layman ]]; then
-#   echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
-#   sudo layman -L
-#   sudo layman -a TAJJADA
-#else
-#   echo2log "/usr/bin/layman is not exist..."
-#fi
-
 echo INPORTANT!! just created ~/gentoo-tools-failed-log !
