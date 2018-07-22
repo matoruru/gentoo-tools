@@ -25,6 +25,7 @@ sudo emerge -avD              \
    x11-terms/rxvt-unicode     \
    x11-misc/lightdm           \
    x11-misc/dmenu             \
+   x11-misc/xcompmgr          \
    x11-base/xorg-server       \
    layman
 
@@ -44,6 +45,7 @@ NECESSARY_FILES+=( "/usr/bin/xmonad"                 )
 NECESSARY_FILES+=( "/usr/bin/xinput"                 )
 NECESSARY_FILES+=( "/usr/bin/urxvt"                  )
 NECESSARY_FILES+=( "/usr/bin/dmenu"                  )
+NECESSARY_FILES+=( "/usr/bin/xcompmgr"               )
 NECESSARY_FILES+=( "/usr/bin/layman"                 )
 for file in ${NECESSARY_FILES[@]}
 do
