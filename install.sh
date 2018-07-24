@@ -11,6 +11,7 @@ sudo emerge -avD              \
    dev-vcs/git                \
    app-shells/fish            \
    app-misc/sl                \
+   app-text/qpdfview          \
    www-client/google-chrome   \
    media-gfx/feh              \
    x11-wm/xmonad              \
