@@ -1,13 +1,6 @@
 #!/bin/bash
 
-function echo2log {
-   echo $1 >> ~/gentoo-tools-failed-log
-}
-
-if [[ -f $HOME/gentoo-tools-install-log ]]; then
-   rm ~/gentoo-tools-failed-log
-fi
-touch ~/gentoo-tools-failed-log
+IS_INSTALLED=true
 
 sudo emerge -avD              \
    dev-lang/ruby              \
@@ -27,33 +20,22 @@ sudo emerge -avD              \
    x11-misc/dmenu             \
    x11-misc/compton           \
    x11-base/xorg-server       \
-   layman
+   layman                     \
+   || IS_INSTALLED=false
 
-# check whether necessary files is exist or not
-NECESSARY_FILES=()
-NECESSARY_FILES+=( "/usr/bin/ruby"                   )
-NECESSARY_FILES+=( "/usr/bin/lua"                    )
-NECESSARY_FILES+=( "/usr/bin/luajit"                 )
-NECESSARY_FILES+=( "/usr/bin/groovy"                 )
-NECESSARY_FILES+=( "/usr/bin/git"                    )
-NECESSARY_FILES+=( "/bin/fish"                       )
-NECESSARY_FILES+=( "/usr/bin/sl"                     )
-NECESSARY_FILES+=( "/usr/bin/google-chrome-stable"   )
-NECESSARY_FILES+=( "/bin/fish"                       )
-NECESSARY_FILES+=( "/usr/bin/feh"                    )
-NECESSARY_FILES+=( "/usr/bin/xmonad"                 )
-NECESSARY_FILES+=( "/usr/bin/xinput"                 )
-NECESSARY_FILES+=( "/usr/bin/urxvt"                  )
-NECESSARY_FILES+=( "/usr/bin/dmenu"                  )
-NECESSARY_FILES+=( "/usr/bin/compton"                )
-NECESSARY_FILES+=( "/usr/bin/layman"                 )
-for file in ${NECESSARY_FILES[@]}
-do
-   if [[ ! -f $file ]]; then
-      echo2log "$file is not exist..."
-   else
-      echo     "$file is exist!"
-   fi
-done
+if "$IS_INSTALLED"; then
+   echo 'emerge is finish with succeed!'
+else
+   echo 'emerge is finish with failed...'
+   exit
+fi
 
-echo INPORTANT!! just created ~/gentoo-tools-failed-log !
+# copy Picture and wallpaper directory to ~/
+cp -r Pictures ~/
+
+# install fish theme (yimmy)
+bash fish-theme.sh
+
+# install fonts
+bash fonts/monaco.sh
+bash fonts/powerline-font.sh
