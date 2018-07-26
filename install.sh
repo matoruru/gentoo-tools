@@ -33,6 +33,7 @@ fi
 
 # copy Picture and wallpaper directory to ~/
 cp -r Pictures ~/
+chmod 755 ~/Pictures/wallpaper/changewp.sh
 
 # install fish theme (yimmy)
 bash fish-theme.sh
