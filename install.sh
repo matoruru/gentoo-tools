@@ -15,7 +15,7 @@ sudo emerge -avD              \
    www-client/google-chrome   \
    media-gfx/feh              \
    x11-wm/xmonad              \
-   x11-apps/xinput            \
+   x11-wm/xmonad-contrib      \
    x11-terms/rxvt-unicode     \
    x11-misc/lightdm           \
    x11-misc/dmenu             \
