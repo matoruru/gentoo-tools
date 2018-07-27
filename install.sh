@@ -2,27 +2,31 @@
 
 IS_INSTALLED=true
 
-sudo emerge -avD              \
-   dev-lang/ruby              \
-   dev-lang/lua               \
-   dev-lang/luajit            \
-   dev-lang/perl              \
-   dev-java/groovy            \
-   dev-vcs/git                \
-   app-shells/fish            \
-   app-misc/sl                \
-   app-text/qpdfview          \
-   www-client/google-chrome   \
-   media-gfx/feh              \
-   x11-wm/xmonad              \
-   x11-wm/xmonad-contrib      \
-   x11-terms/rxvt-unicode     \
-   x11-misc/lightdm           \
-   x11-misc/rofi              \
-   x11-misc/compton           \
-   x11-misc/xmobar            \
-   x11-base/xorg-server       \
-   layman                     \
+sudo emerge -avD                \
+   app-laptop/laptop-mode-tools \
+   sys-power/upower             \
+   sys-power/acpitool           \
+   dev-lang/ruby                \
+   dev-lang/lua                 \
+   dev-lang/luajit              \
+   dev-lang/perl                \
+   dev-java/groovy              \
+   dev-vcs/git                  \
+   app-shells/fish              \
+   app-misc/sl                  \
+   app-text/qpdfview            \
+   www-client/google-chrome     \
+   media-gfx/feh                \
+   net-misc/ntp                 \
+   net-misc/youtube-viewer      \
+   x11-wm/xmonad                \
+   x11-wm/xmonad-contrib        \
+   x11-terms/rxvt-unicode       \
+   x11-misc/rofi                \
+   x11-misc/compton             \
+   x11-misc/xmobar              \
+   x11-base/xorg-server         \
+   layman                       \
    || IS_INSTALLED=false
 
 if "$IS_INSTALLED"; then
