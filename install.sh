@@ -18,7 +18,7 @@ sudo emerge -avD              \
    x11-wm/xmonad-contrib      \
    x11-terms/rxvt-unicode     \
    x11-misc/lightdm           \
-   x11-misc/dmenu             \
+   x11-misc/rofi              \
    x11-misc/compton           \
    x11-misc/xmobar            \
    x11-base/xorg-server       \
