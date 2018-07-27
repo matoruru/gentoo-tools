@@ -20,6 +20,7 @@ sudo emerge -avD              \
    x11-misc/lightdm           \
    x11-misc/dmenu             \
    x11-misc/compton           \
+   x11-misc/xmobar            \
    x11-base/xorg-server       \
    layman                     \
    || IS_INSTALLED=false
