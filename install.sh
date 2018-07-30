@@ -25,6 +25,7 @@ sudo emerge -avD                \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
+   x11-misc/unclutter           \
    x11-base/xorg-server         \
    layman                       \
    || IS_INSTALLED=false
