@@ -1,5 +1,10 @@
 #!/bin/bash
 
 cd  ~/repositories
-git clone https://github.com/todylu/monaco.ttf
-sudo cp monaco.ttf/monaco.ttf /usr/share/fonts/
+
+if [[ ! -d monaco.ttf ]]; then
+   git clone https://github.com/todylu/monaco.ttf
+fi
+
+mkdir                    ~/.fonts
+cp monaco.ttf/monaco.ttf ~/.fonts/
