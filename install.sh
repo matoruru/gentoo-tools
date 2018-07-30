@@ -14,6 +14,7 @@ sudo emerge -avD                \
    dev-vcs/git                  \
    app-shells/fish              \
    app-misc/sl                  \
+   app-misc/oneko               \
    app-text/qpdfview            \
    www-client/google-chrome     \
    media-gfx/feh                \
@@ -26,6 +27,8 @@ sudo emerge -avD                \
    x11-misc/compton             \
    x11-misc/xmobar              \
    x11-misc/unclutter           \
+   x11-misc/xplanet             \
+   x11-apps/mesa-progs          \
    x11-base/xorg-server         \
    layman                       \
    || IS_INSTALLED=false
