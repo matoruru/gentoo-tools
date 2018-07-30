@@ -18,6 +18,8 @@ sudo emerge -avD                \
    app-text/qpdfview            \
    www-client/google-chrome     \
    media-gfx/feh                \
+   media-sound/alsa-utils       \
+   media-sound/moc              \
    net-misc/ntp                 \
    net-misc/youtube-viewer      \
    x11-wm/xmonad                \
