@@ -29,6 +29,10 @@ if [[ -d vim ]]; then
 else
    echo "vim repo is not exist..."
    git clone https://github.com/vim/vim.git
+   if [[ ! -d vim ]]; then
+      echo "cloning of vim repo finished with failure..."
+      exit
+   fi
 fi
 
 if [[ -f /usr/local/bin/vim ]]; then
