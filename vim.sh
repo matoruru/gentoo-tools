@@ -61,6 +61,8 @@ cd vim/src
    --enable-rubyinterp=dynamic    \
    --enable-fontset               \
    --enable-fail-if-missing       \
+   --disable-gpm                  \
+   --disable-gui                  \
    --with-luajit                  \
    --with-features=huge           \
    && make && sudo make install
