@@ -25,7 +25,11 @@ cd    ~/repositories
 if [[ -d vim ]]; then
    echo "vim repo is exist!"
    echo "just update vim repo..."
-   cd vim && git pull && cd ..
+   cd vim
+   COMMANDOUTPUT=$( git pull )
+   echo "$COMMANDOUTPUT"
+   if [[ "$COMMANDOUTPUT" = "Already up to date." ]]; then exit; fi
+   cd ..
 else
    echo "vim repo is not exist..."
    git clone https://github.com/vim/vim.git
