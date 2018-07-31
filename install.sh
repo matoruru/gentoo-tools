@@ -53,3 +53,4 @@ bash fish-theme.sh
 # install fonts
 bash fonts/monaco.sh
 bash fonts/powerline-font.sh
+fc-cache -fv
