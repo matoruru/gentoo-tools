@@ -4,6 +4,7 @@ IS_INSTALLED=true
 
 sudo emerge -avD                \
    app-laptop/laptop-mode-tools \
+   app-office/libreoffice       \
    sys-power/upower             \
    sys-power/acpitool           \
    dev-lang/ruby                \
