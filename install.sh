@@ -5,6 +5,7 @@ IS_INSTALLED=true
 sudo emerge -av                 \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
+   app-editors/retext           \
    dev-lang/ruby                \
    dev-lang/lua                 \
    dev-lang/luajit              \
