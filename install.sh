@@ -2,7 +2,7 @@
 
 IS_INSTALLED=true
 
-sudo emerge -avD                \
+sudo emerge -av                 \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    dev-lang/ruby                \
