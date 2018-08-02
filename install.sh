@@ -51,3 +51,9 @@ bash fish-theme.sh
 bash fonts/monaco.sh
 bash fonts/powerline-font.sh
 fc-cache -fv
+
+# install vim
+bash vim.sh
+
+# enable sound
+bash soundEnable.sh
