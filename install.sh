@@ -5,8 +5,6 @@ IS_INSTALLED=true
 sudo emerge -avD                \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
-   sys-power/upower             \
-   sys-power/acpitool           \
    dev-lang/ruby                \
    dev-lang/lua                 \
    dev-lang/luajit              \
@@ -30,7 +28,6 @@ sudo emerge -avD                \
    x11-misc/compton             \
    x11-misc/xmobar              \
    x11-misc/unclutter           \
-   x11-misc/xplanet             \
    x11-apps/mesa-progs          \
    x11-base/xorg-server         \
    layman                       \
