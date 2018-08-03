@@ -17,6 +17,7 @@ sudo emerge -av                 \
    app-misc/oneko               \
    app-text/qpdfview            \
    www-client/google-chrome     \
+   www-client/qutebrowser       \
    media-gfx/feh                \
    media-sound/alsa-utils       \
    media-sound/moc              \
