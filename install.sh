@@ -10,6 +10,7 @@ sudo emerge -av                 \
    dev-lang/lua                 \
    dev-lang/luajit              \
    dev-lang/perl                \
+   dev-python/spyder            \
    dev-java/groovy              \
    dev-vcs/git                  \
    app-shells/fish              \
