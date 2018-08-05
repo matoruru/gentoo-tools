@@ -12,6 +12,7 @@ sudo emerge -av                 \
    dev-lang/perl                \
    dev-python/spyder            \
    dev-java/groovy              \
+   dev-util/dialog              \
    dev-vcs/git                  \
    app-shells/fish              \
    app-misc/sl                  \
