@@ -9,6 +9,7 @@ sudo emerge -av                 \
    app-shells/fish              \
    app-misc/sl                  \
    app-misc/oneko               \
+   app-misc/neofetch            \
    app-text/qpdfview            \
    dev-lang/ruby                \
    dev-lang/lua                 \
