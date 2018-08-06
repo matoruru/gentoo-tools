@@ -6,6 +6,10 @@ sudo emerge -av                 \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    app-editors/retext           \
+   app-shells/fish              \
+   app-misc/sl                  \
+   app-misc/oneko               \
+   app-text/qpdfview            \
    dev-lang/ruby                \
    dev-lang/lua                 \
    dev-lang/luajit              \
@@ -14,10 +18,6 @@ sudo emerge -av                 \
    dev-java/groovy              \
    dev-util/dialog              \
    dev-vcs/git                  \
-   app-shells/fish              \
-   app-misc/sl                  \
-   app-misc/oneko               \
-   app-text/qpdfview            \
    www-client/google-chrome     \
    www-client/qutebrowser       \
    media-gfx/feh                \
