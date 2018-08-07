@@ -30,6 +30,7 @@ sudo emerge -av                 \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
+   x11-themes/xcursor-themes    \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
