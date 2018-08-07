@@ -22,6 +22,7 @@ sudo emerge -av                 \
    www-client/google-chrome     \
    www-client/qutebrowser       \
    media-gfx/feh                \
+   media-gfx/scrot              \
    media-sound/alsa-utils       \
    media-sound/moc              \
    net-misc/ntp                 \
@@ -47,6 +48,7 @@ fi
 
 # copy Picture and wallpaper directory to ~/
 cp -r Pictures ~/
+mkdir          ~/Pictures/Screenshots
 chmod 755 ~/Pictures/wallpaper/changewp.sh
 
 # install fish theme (yimmy)
