@@ -19,13 +19,11 @@ sudo emerge -av                 \
    dev-java/groovy              \
    dev-util/dialog              \
    dev-vcs/git                  \
-   www-client/google-chrome     \
    www-client/qutebrowser       \
    media-gfx/feh                \
    media-gfx/scrot              \
    media-sound/alsa-utils       \
    media-sound/moc              \
-   net-misc/ntp                 \
    net-misc/youtube-viewer      \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
