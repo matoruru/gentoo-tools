@@ -12,6 +12,7 @@ sudo emerge -av                 \
    app-misc/neofetch            \
    app-text/qpdfview            \
    app-text/dictd               \
+   app-portage/layman           \
    dev-lang/ruby                \
    dev-lang/lua                 \
    dev-lang/luajit              \
@@ -38,7 +39,6 @@ sudo emerge -av                 \
    x11-apps/xsetroot            \
    x11-base/xorg-server         \
    www-servers/apache           \
-   layman                       \
    || IS_INSTALLED=false
 
 if "$IS_INSTALLED"; then
