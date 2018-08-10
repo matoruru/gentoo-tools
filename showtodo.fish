@@ -1,5 +1,9 @@
 #!/bin/fish
 
+if test ( tty ) != "/dev/pts/0"
+   exit
+end
+
 set length ( math ( awk '{ l=length($0);if(m<l) m=l } END{ print m }' ~/todolist.txt ) + 4 )
 
 set minLength 50
