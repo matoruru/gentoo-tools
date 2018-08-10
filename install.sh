@@ -36,6 +36,7 @@ sudo emerge -av                 \
    x11-apps/mesa-progs          \
    x11-apps/xsetroot            \
    x11-base/xorg-server         \
+   www-servers/apache           \
    layman                       \
    || IS_INSTALLED=false
 
@@ -64,3 +65,6 @@ bash vim.sh
 
 # enable sound
 bash soundEnable.sh
+
+# create a link to apache's documentroot
+bash htdocs.sh
