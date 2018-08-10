@@ -30,12 +30,13 @@ sudo emerge -av                 \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
-   x11-themes/xcursor-themes    \
+   x11-themes/gentoo-xcursors   \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
    x11-misc/unclutter           \
    x11-apps/mesa-progs          \
+   x11-apps/xsetroot            \
    x11-base/xorg-server         \
    layman                       \
    || IS_INSTALLED=false
