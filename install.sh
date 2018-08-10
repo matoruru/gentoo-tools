@@ -11,6 +11,7 @@ sudo emerge -av                 \
    app-misc/oneko               \
    app-misc/neofetch            \
    app-text/qpdfview            \
+   app-text/dictd               \
    dev-lang/ruby                \
    dev-lang/lua                 \
    dev-lang/luajit              \
