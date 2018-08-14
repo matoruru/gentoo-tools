@@ -38,6 +38,7 @@ sudo emerge -av                 \
    x11-misc/unclutter           \
    x11-apps/mesa-progs          \
    x11-apps/xsetroot            \
+   x11-apps/xmodmap             \
    x11-base/xorg-server         \
    www-servers/apache           \
    || IS_INSTALLED=false
