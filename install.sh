@@ -20,6 +20,7 @@ sudo emerge -av                 \
    dev-python/spyder            \
    dev-java/groovy              \
    dev-util/dialog              \
+   dev-util/ctags               \
    dev-vcs/git                  \
    www-client/qutebrowser       \
    media-gfx/feh                \
