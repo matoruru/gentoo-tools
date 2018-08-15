@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ ! $(pwd) = "$HOME/repositories/matoruru/gentoo-tools" ]]; then
+   echo "Invalid location!"
+   echo "Move to $HOME/repositories/matoruru/gentoo-tools and execute again..."
+   exit
+fi
+
 IS_INSTALLED=true
 
 sudo emerge -av                 \
