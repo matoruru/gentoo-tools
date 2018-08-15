@@ -7,6 +7,7 @@ sudo emerge -av                 \
    app-office/libreoffice       \
    app-editors/retext           \
    app-shells/fish              \
+   app-shells/peco              \
    app-misc/sl                  \
    app-misc/oneko               \
    app-misc/neofetch            \
