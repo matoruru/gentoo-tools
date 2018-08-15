@@ -51,9 +51,11 @@ else
    exit
 fi
 
-# copy Picture and wallpaper directory to ~/
+# copy Picture to ~/
 cp -r Pictures ~/
-chmod 755 ~/Pictures/wallpaper/changewp.sh
+sudo cp setwp.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/setwp.sh
+setwp.sh ~/Pictures/ruru.png
 
 # install fish theme (yimmy)
 bash fish-theme.sh
