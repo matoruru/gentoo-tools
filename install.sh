@@ -53,7 +53,6 @@ fi
 
 # copy Picture and wallpaper directory to ~/
 cp -r Pictures ~/
-mkdir          ~/Pictures/Screenshots
 chmod 755 ~/Pictures/wallpaper/changewp.sh
 
 # install fish theme (yimmy)
@@ -72,3 +71,7 @@ bash soundEnable.sh
 
 # create a link to apache's documentroot
 bash htdocs.sh
+
+# create executable file in path
+sudo cp screenshot.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/screenshot.sh
