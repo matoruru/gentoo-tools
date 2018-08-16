@@ -14,7 +14,7 @@ if [[ -f $tmpname ]]; then
 fi
 
 newname=$( scrot -q 100 $3 '%Y-%m-%d-%T-screenshot.png' -e 'echo $f' )
-cp $newname $tmpname
+ln -s $newname $tmpname
 
 # To make $disptime from 0 to 5
 if   [[ $(echo "$1 <= 0" | bc) -eq 1 ]]; then
