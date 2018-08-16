@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Usage
+# screenshot.sh  displaying time  zoom ratio  [--focused]
+
 if [[ ! -d $HOME/Pictures/Screenshots/ ]]; then
    mkdir -p ~/Pictures/Screenshots
 fi
