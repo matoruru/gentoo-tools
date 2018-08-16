@@ -8,7 +8,7 @@ fi
 
 IS_INSTALLED=true
 
-sudo emerge -av                 \
+sudo emerge -avuDN @world       \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    app-editors/retext           \
