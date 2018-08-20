@@ -6,6 +6,13 @@ if [[ ! $(pwd) = "$HOME/repositories/matoruru/gentoo-tools" ]]; then
    exit
 fi
 
+function ping_failure {
+   echo "no connection... failure"
+   echo "exit"
+   exit
+}
+ping www.google.com -c1 || ping_failure
+
 IS_INSTALLED=true
 
 sudo emerge -avuDN @world       \
