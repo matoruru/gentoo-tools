@@ -37,6 +37,7 @@ sudo emerge -avuDN @world       \
    dev-util/dialog              \
    dev-util/ctags               \
    dev-vcs/git                  \
+   dev-vcs/bzr                  \
    www-client/qutebrowser       \
    media-gfx/feh                \
    media-gfx/scrot              \
