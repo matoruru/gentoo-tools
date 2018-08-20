@@ -2,6 +2,13 @@
 
 echo '[Install languages (for vim):]'
 
+function ping_failure {
+   echo "no connection... failure"
+   echo "exit"
+   exit
+}
+ping www.google.com -c1 || ping_failure
+
 # check whether necessary files is exist or not
 NECESSARY_FILES=()
 NECESSARY_FILES+=( "/usr/bin/lua"    )
