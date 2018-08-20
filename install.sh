@@ -41,6 +41,7 @@ sudo emerge -avuDN @world       \
    www-client/qutebrowser       \
    media-gfx/feh                \
    media-gfx/scrot              \
+   media-gfx/pinta              \
    media-sound/alsa-utils       \
    media-sound/moc              \
    net-misc/youtube-viewer      \
