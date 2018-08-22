@@ -45,6 +45,7 @@ sudo emerge -avuDN @world       \
    media-sound/alsa-utils       \
    media-sound/moc              \
    net-misc/youtube-viewer      \
+  =net-im/corebird-1.1          \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
