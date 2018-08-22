@@ -11,7 +11,7 @@ function ping_failure {
    echo "exit"
    exit
 }
-ping www.google.com -c1 || ping_failure
+ping www.google.com -c5 -i 0.2 || ping_failure
 
 IS_INSTALLED=true
 
