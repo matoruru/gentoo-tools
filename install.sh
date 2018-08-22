@@ -93,3 +93,6 @@ bash htdocs.sh
 # create executable file in path
 sudo cp screenshot.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/screenshot.sh
+
+# enable docker with non-root user
+bash docker.sh
