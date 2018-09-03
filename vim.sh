@@ -72,7 +72,7 @@ cd vim/src
    --disable-gui                  \
    --with-luajit                  \
    --with-features=huge           \
-   && make -j7 && sudo make -j7 install
+   && make -j8 && sudo make -j8 install
 
 VIM_CURRENTVER=$( vim --version | grep patches )
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
