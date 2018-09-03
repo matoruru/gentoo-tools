@@ -13,6 +13,11 @@ function ping_failure {
 }
 ping www.google.com -c5 -i 0.2 || ping_failure
 
+# to enable layman overlays
+sudo layman -L
+# to add overlays
+sudo layman -a jorgicio
+
 IS_INSTALLED=true
 
 sudo emerge -av                 \
@@ -49,6 +54,7 @@ sudo emerge -av                 \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
+   x11-themes/capitaine-cursors \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
