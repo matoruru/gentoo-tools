@@ -15,7 +15,7 @@ ping www.google.com -c5 -i 0.2 || ping_failure
 
 IS_INSTALLED=true
 
-sudo emerge -avuDN @world       \
+sudo emerge -av                 \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    app-editors/retext           \
@@ -49,7 +49,6 @@ sudo emerge -avuDN @world       \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
-   x11-themes/gentoo-xcursors   \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
