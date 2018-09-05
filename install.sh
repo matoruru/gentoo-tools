@@ -20,7 +20,7 @@ sudo layman -a jorgicio
 
 IS_INSTALLED=true
 
-sudo emerge -av                 \
+sudo emerge -avuDN @world       \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    app-editors/retext           \
@@ -58,7 +58,6 @@ sudo emerge -av                 \
    x11-misc/rofi                \
    x11-misc/compton             \
    x11-misc/xmobar              \
-   x11-misc/unclutter           \
    x11-apps/mesa-progs          \
    x11-apps/xsetroot            \
    x11-apps/xmodmap             \
