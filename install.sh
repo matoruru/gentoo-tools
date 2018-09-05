@@ -76,9 +76,9 @@ ping www.google.com -c5 -i 0.2 || ping_failure
 
 # copy Picture to ~/
 cp -r Pictures ~/
-sudo cp setwp.sh /usr/local/bin/
-sudo chmod +x /usr/local/bin/setwp.sh
-setwp.sh ~/Pictures/ruru.png
+sudo cp setwp.sh /usr/local/bin/setwp
+sudo chmod +x /usr/local/bin/setwp
+setwp ~/Pictures/ruru.png
 
 # install fish theme (yimmy)
 bash fish-theme.sh
