@@ -84,9 +84,7 @@ setwp.sh ~/Pictures/ruru.png
 bash fish-theme.sh
 
 # install fonts
-bash fonts/monaco.sh
-bash fonts/powerline-font.sh
-fc-cache -fv
+bash monaco-powerline.sh
 
 # install vim
 bash vim.sh
