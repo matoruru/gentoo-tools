@@ -104,6 +104,5 @@ sudo chmod +x /usr/local/bin/screenshot.sh
 # enable docker with non-root user
 bash docker.sh
 
-# set capitaine-theme as the cursor
-mkdir ~/.icons
-ln -s /usr/share/icons/capitaine-cursors ~/.icons/
+# set symbolic links to cursor images
+bash cursors.sh
