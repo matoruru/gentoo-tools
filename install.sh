@@ -72,6 +72,8 @@ else
    exit
 fi
 
+ping www.google.com -c5 -i 0.2 || ping_failure
+
 # copy Picture to ~/
 cp -r Pictures ~/
 sudo cp setwp.sh /usr/local/bin/
