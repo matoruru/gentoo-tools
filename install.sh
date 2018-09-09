@@ -24,6 +24,7 @@ sudo emerge -avuDN @world       \
    app-laptop/laptop-mode-tools \
    app-office/libreoffice       \
    app-editors/retext           \
+   app-editors/neovim		\
    app-emulation/docker         \
    app-shells/fish              \
    app-shells/peco              \
