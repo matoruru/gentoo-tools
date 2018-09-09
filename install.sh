@@ -41,6 +41,7 @@ sudo emerge -avuDN @world       \
    dev-java/groovy              \
    dev-util/dialog              \
    dev-util/ctags               \
+   dev-util/android-studio      \
    dev-vcs/git                  \
    dev-vcs/bzr                  \
    www-client/qutebrowser       \
