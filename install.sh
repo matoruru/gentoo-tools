@@ -48,6 +48,11 @@ sudo emerge -avuDN @world       \
    media-gfx/feh                \
    media-gfx/scrot              \
    media-gfx/pinta              \
+   media-gfx/gnome-font-viewer  \
+   media-fonts/hack             \
+   media-fonts/fantasque-sans-mono             \
+   media-fonts/monoid             \
+   media-fonts/hermit             \
    media-sound/alsa-utils       \
    media-sound/moc              \
    net-misc/youtube-viewer      \
