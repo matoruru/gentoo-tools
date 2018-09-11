@@ -58,6 +58,7 @@ sudo emerge -avuDN @world       \
    media-sound/moc              \
    net-misc/youtube-viewer      \
    net-im/corebird              \
+   sys-process/time             \
    x11-wm/xmonad                \
    x11-wm/xmonad-contrib        \
    x11-terms/rxvt-unicode       \
