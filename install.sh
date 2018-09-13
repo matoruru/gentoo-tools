@@ -69,6 +69,7 @@ sudo emerge -avuDN @world       \
    x11-apps/mesa-progs          \
    x11-apps/xsetroot            \
    x11-apps/xmodmap             \
+   x11-apps/xbacklight          \
    x11-base/xorg-server         \
    www-servers/apache           \
    || IS_INSTALLED=false
