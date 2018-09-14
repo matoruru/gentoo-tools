@@ -17,6 +17,7 @@ ping www.google.com -c5 -i 0.2 || ping_failure
 sudo layman -L
 # to add overlays
 sudo layman -a jorgicio
+sudo layman -a jm-overlay
 
 IS_INSTALLED=true
 
@@ -38,11 +39,13 @@ sudo emerge -avuDN @world          \
    dev-lang/lua                    \
    dev-lang/luajit                 \
    dev-lang/perl                   \
+   dev-lang/kotlin-bin             \
    dev-python/spyder               \
    dev-java/groovy                 \
    dev-util/dialog                 \
    dev-util/ctags                  \
    dev-util/android-studio         \
+   dev-util/android-tools          \
    dev-vcs/git                     \
    dev-vcs/bzr                     \
    www-client/qutebrowser          \
