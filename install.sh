@@ -90,6 +90,10 @@ sudo cp setwp.sh /usr/local/bin/setwp
 sudo chmod +x /usr/local/bin/setwp
 setwp ~/Pictures/ruru.png
 
+# enable to make wifi on/off
+sudo cp wificommands/* /usr/local/bin/
+sudo chmod +x /usr/local/bin/wifi*
+
 # install fish theme (yimmy)
 bash fish-theme.sh
 
