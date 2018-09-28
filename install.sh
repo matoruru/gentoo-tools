@@ -26,6 +26,7 @@ sudo emerge -avuDN @world          \
    app-editors/retext              \
    app-editors/neovim              \
    app-emulation/docker            \
+   app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
    app-misc/sl                     \
