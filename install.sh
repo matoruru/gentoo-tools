@@ -29,8 +29,6 @@ sudo emerge -avuDN @world          \
    app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
-   app-misc/sl                     \
-   app-misc/oneko                  \
    app-misc/neofetch               \
    app-text/qpdfview               \
    app-text/dictd                  \
