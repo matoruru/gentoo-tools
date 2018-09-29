@@ -22,21 +22,17 @@ IS_INSTALLED=true
 
 sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
-   app-office/libreoffice          \
-   app-editors/retext              \
    app-editors/neovim              \
    app-emulation/docker            \
    app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
    app-misc/neofetch               \
-   app-text/qpdfview               \
    app-text/dictd                  \
    dev-lang/ruby                   \
    dev-lang/lua                    \
    dev-lang/luajit                 \
    dev-lang/perl                   \
-   dev-python/spyder               \
    dev-java/groovy                 \
    dev-haskell/stack-bin           \
    dev-util/dialog                 \
@@ -46,7 +42,6 @@ sudo emerge -avuDN @world          \
    www-client/qutebrowser          \
    media-gfx/feh                   \
    media-gfx/scrot                 \
-   media-gfx/pinta                 \
    media-gfx/gnome-font-viewer     \
    media-fonts/hack                \
    media-fonts/fantasque-sans-mono \
@@ -54,7 +49,6 @@ sudo emerge -avuDN @world          \
    media-fonts/hermit              \
    media-sound/alsa-utils          \
    media-sound/moc                 \
-   net-misc/youtube-viewer         \
    net-im/corebird                 \
    sys-process/time                \
    x11-wm/xmonad                   \
