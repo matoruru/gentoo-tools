@@ -38,6 +38,7 @@ sudo emerge -avuDN @world          \
    dev-lang/perl                   \
    dev-python/spyder               \
    dev-java/groovy                 \
+   dev-haskell/stack-bin           \
    dev-util/dialog                 \
    dev-util/ctags                  \
    dev-util/android-studio         \
