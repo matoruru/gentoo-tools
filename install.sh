@@ -34,7 +34,6 @@ sudo emerge -avuDN @world          \
    app-misc/neofetch               \
    app-text/qpdfview               \
    app-text/dictd                  \
-   app-portage/layman              \
    dev-lang/ruby                   \
    dev-lang/lua                    \
    dev-lang/luajit                 \
