@@ -41,8 +41,6 @@ sudo emerge -avuDN @world          \
    dev-haskell/stack-bin           \
    dev-util/dialog                 \
    dev-util/ctags                  \
-   dev-util/android-studio         \
-   dev-util/android-tools          \
    dev-vcs/git                     \
    dev-vcs/bzr                     \
    www-client/qutebrowser          \
@@ -71,7 +69,6 @@ sudo emerge -avuDN @world          \
    x11-apps/xmodmap                \
    x11-apps/xbacklight             \
    x11-base/xorg-server            \
-   www-servers/apache              \
    || IS_INSTALLED=false
 
 if "$IS_INSTALLED"; then
