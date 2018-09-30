@@ -50,6 +50,7 @@ sudo emerge -avuDN @world          \
    media-sound/alsa-utils          \
    media-sound/moc                 \
    net-im/corebird                 \
+   net-libs/nodejs                 \
    sys-process/time                \
    x11-wm/xmonad                   \
    x11-wm/xmonad-contrib           \
