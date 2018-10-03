@@ -35,6 +35,7 @@ sudo emerge -avuDN @world          \
    dev-lang/perl                   \
    dev-java/groovy                 \
    dev-haskell/stack-bin           \
+   dev-ruby/colorize               \
    dev-util/dialog                 \
    dev-util/ctags                  \
    dev-vcs/git                     \
@@ -74,6 +75,13 @@ else
 fi
 
 ping www.google.com -c5 -i 0.2 || ping_failure
+
+# install dic
+(
+   cd ~/repositories/matoruru
+   git clone git@github.com:matoruru/dic.git
+   cd dic;bash install.sh
+)
 
 # copy Picture to ~/
 cp -r Pictures ~/
