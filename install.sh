@@ -123,3 +123,6 @@ bash docker.sh
 
 # set symbolic links to cursor images
 bash cursors.sh
+
+# enable tap as click
+sudo ln -srf 40-libinput.conf /usr/share/X11/xorg.conf.d/
