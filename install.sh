@@ -98,11 +98,9 @@ bash fish-theme.sh
 
 # install fonts
 mkdir ~/.fonts
-tar vxf  Cica3.tar.bz2 -C ~/.fonts/
-tar vxf  osaka.tar.bz2 -C ~/.fonts/
-tar vxf monaco.tar.bz2 -C ~/.fonts/
-tar vxf myfont.tar.bz2 -C ~/.fonts/
+find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 ( cd ~/.fonts;fc-cache -vf )
+
 
 # install vim
 bash vim.sh
