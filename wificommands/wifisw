@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if [[ "$(/etc/init.d/net.wlp2s0 status)" = " * status: stopped" ]]; then
-   wifion.sh
-else
-   wifioff.sh
-fi

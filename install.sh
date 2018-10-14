@@ -90,7 +90,8 @@ sudo chmod +x /usr/local/bin/setwp
 setwp ~/Pictures/ruru.png
 
 # enable to make wifi on/off
-sudo cp wificommands/* /usr/local/bin/
+sudo cp wificommands/wifioff.sh /usr/local/bin/wifioff
+sudo cp wificommands/wifion.sh  /usr/local/bin/wifion
 sudo chmod +x /usr/local/bin/wifi*
 
 # install fish theme (yimmy)
