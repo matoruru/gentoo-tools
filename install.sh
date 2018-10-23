@@ -109,6 +109,9 @@ find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 
 # install vim
 bash vim.sh
+mkdir -p ~/.vim/.tmp/undo   \
+         ~/.vim/.tmp/backup \
+         ~/.vim/.tmp/swp
 
 # install nvim settings
 bash nvim.sh
