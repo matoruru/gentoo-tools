@@ -33,9 +33,11 @@ sudo emerge -avuDN @world          \
    dev-lang/lua                    \
    dev-lang/luajit                 \
    dev-lang/perl                   \
+   dev-lang/php                    \
    dev-java/groovy                 \
    dev-haskell/stack-bin           \
    dev-ruby/colorize               \
+   dev-ruby/nokogiri               \
    dev-util/dialog                 \
    dev-util/ctags                  \
    dev-vcs/git                     \
@@ -56,10 +58,12 @@ sudo emerge -avuDN @world          \
    x11-wm/xmonad                   \
    x11-wm/xmonad-contrib           \
    x11-terms/rxvt-unicode          \
+   x11-terms/kitty                 \
    x11-themes/capitaine-cursors    \
    x11-misc/rofi                   \
    x11-misc/compton                \
    x11-misc/xmobar                 \
+   x11-misc/xclip                  \
    x11-apps/mesa-progs             \
    x11-apps/xsetroot               \
    x11-apps/xmodmap                \
