@@ -52,6 +52,7 @@ sudo emerge -avuDN @world          \
    media-fonts/hermit              \
    media-sound/alsa-utils          \
    media-sound/moc                 \
+   media-sound/asunder             \
    net-im/corebird                 \
    net-libs/nodejs                 \
    sys-process/time                \
@@ -64,6 +65,7 @@ sudo emerge -avuDN @world          \
    x11-misc/compton                \
    x11-misc/xmobar                 \
    x11-misc/xclip                  \
+   x11-misc/wmname                 \
    x11-apps/mesa-progs             \
    x11-apps/xsetroot               \
    x11-apps/xmodmap                \
