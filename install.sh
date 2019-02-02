@@ -11,7 +11,7 @@ function ping_failure {
    echo "exit"
    exit
 }
-ping www.google.com -c5 -i 0.2 || ping_failure
+ping www.github.com -c5 -i 0.2 || ping_failure
 
 # to enable layman overlays
 sudo layman -L
@@ -29,12 +29,12 @@ sudo emerge -avuDN @world          \
    app-shells/peco                 \
    app-misc/neofetch               \
    app-text/dictd                  \
+   app-text/tree                   \
    dev-lang/ruby                   \
    dev-lang/lua                    \
    dev-lang/luajit                 \
    dev-lang/perl                   \
    dev-lang/php                    \
-   dev-java/groovy                 \
    dev-haskell/stack-bin           \
    dev-ruby/colorize               \
    dev-ruby/nokogiri               \
@@ -80,7 +80,7 @@ else
    exit
 fi
 
-ping www.google.com -c5 -i 0.2 || ping_failure
+ping www.github.com -c5 -i 0.2 || ping_failure
 
 # install dic
 (
