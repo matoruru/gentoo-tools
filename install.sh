@@ -89,11 +89,12 @@ ping www.github.com -c5 -i 0.2 || ping_failure
    cd dic;bash install.sh
 )
 
-# copy Picture to ~/
+# copy Picture to ~/ and set wallpaper
 cp -r Pictures ~/
 sudo cp setwp.sh /usr/local/bin/setwp
 sudo chmod +x /usr/local/bin/setwp
-setwp ~/Pictures/ruru.png
+curl -o ~/Pictures/gentoo-1920x1080.jpg https://www.gentoo.org/assets/img/wallpaper/gentoo-10/purple/1920x1080.jpg
+setwp ~/Pictures/gentoo-1920x1080.jpg
 
 # enable to make wifi on/off
 sudo cp wificommands/wifioff.sh /usr/local/bin/wifioff
