@@ -107,6 +107,10 @@ mkdir ~/.fonts
 find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 ( cd ~/.fonts;fc-cache -vf )
 
+# set symbolic link to stack-bin, stack
+sudo ln -s /usr/bin/stack-bin /usr/bin/stack
+mkdir ~/purescript-projects
+( cd ~/purescript-projects;npm init -y;npm install -D purescript bower pulp )
 
 # install vim
 bash vim.sh
