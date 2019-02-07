@@ -23,7 +23,6 @@ IS_INSTALLED=true
 sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
    app-editors/neovim              \
-   app-emulation/docker            \
    app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
@@ -42,7 +41,6 @@ sudo emerge -avuDN @world          \
    dev-util/ctags                  \
    dev-vcs/git                     \
    dev-vcs/bzr                     \
-   www-client/qutebrowser          \
    media-gfx/feh                   \
    media-gfx/scrot                 \
    media-gfx/gnome-font-viewer     \
