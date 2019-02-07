@@ -40,6 +40,7 @@ sudo emerge -avuDN @world          \
    dev-ruby/nokogiri               \
    dev-util/dialog                 \
    dev-util/ctags                  \
+   dev-util/idea-community         \
    dev-vcs/git                     \
    dev-vcs/bzr                     \
    media-gfx/feh                   \
