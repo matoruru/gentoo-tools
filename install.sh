@@ -23,6 +23,7 @@ IS_INSTALLED=true
 sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
    app-editors/neovim              \
+   app-editors/nano                \
    app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
