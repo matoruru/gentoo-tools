@@ -24,6 +24,8 @@ sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
    app-editors/neovim              \
    app-editors/nano                \
+   app-emulation/qemu              \
+   app-emulation/virt-manager      \
    app-i18n/mozc                   \
    app-shells/fish                 \
    app-shells/peco                 \
@@ -51,9 +53,13 @@ sudo emerge -avuDN @world          \
    media-sound/alsa-utils          \
    media-sound/moc                 \
    media-sound/asunder             \
+   net-analyzer/arp-scan           \
+   net-fs/samba                    \
    net-im/corebird                 \
    net-libs/nodejs                 \
+   net-misc/bridge-utils           \
    sys-process/time                \
+   sys-process/htop                \
    x11-wm/xmonad                   \
    x11-wm/xmonad-contrib           \
    x11-terms/rxvt-unicode          \
@@ -135,3 +141,10 @@ bash cursors.sh
 
 # enable tap as click
 sudo ln -srf 40-libinput.conf /usr/share/X11/xorg.conf.d/
+
+# kvm
+sudo gpasswd -a matoruru kvm
+sudo usermod -aG libvirt matoruru
+sudo rc-update add libvirtd default
+sudo cp /etc/libvirt/libvirtd.conf /etc/libvirt/libvirtd.conf.old
+sudo ln -rfs libvirtd.conf /etc/libvirt/
