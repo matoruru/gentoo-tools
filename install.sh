@@ -145,6 +145,9 @@ sudo ln -srf 40-libinput.conf /usr/share/X11/xorg.conf.d/
 # add dbus to default
 sudo rc-update add dbus default
 
+# use ntpd
+sudo rc-update add ntpd default
+
 # kvm
 sudo gpasswd -a matoruru kvm
 sudo usermod -aG libvirt matoruru
