@@ -18,6 +18,9 @@ sudo layman -L
 # to add overlays
 sudo layman -a jorgicio
 
+# to make /var/tmp/notmpfs
+bash make-notmpfs.sh
+
 IS_INSTALLED=true
 
 sudo emerge -avuDN @world          \
