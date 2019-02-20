@@ -116,9 +116,9 @@ find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 # install n, the Node.js version manager
 bash n-node.sh
 
-# install yarn
+# install yarn and bower
 # !! after bash n-node.sh !!
-sudo npm i -g yarn
+sudo npm i -g yarn bower
 
 # set symbolic link to stack-bin, stack and install purescript
 # !! after bash n-node.sh !!
