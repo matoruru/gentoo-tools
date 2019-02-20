@@ -63,6 +63,7 @@ sudo emerge -avuDN @world          \
    net-misc/bridge-utils           \
    sys-process/time                \
    sys-process/htop                \
+   x11-drivers/xf86-video-intel    \
    x11-wm/xmonad                   \
    x11-wm/xmonad-contrib           \
    x11-terms/rxvt-unicode          \
