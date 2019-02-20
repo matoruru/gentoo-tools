@@ -58,7 +58,6 @@ sudo emerge -avuDN @world          \
    net-analyzer/arp-scan           \
    net-fs/samba                    \
    net-im/corebird                 \
-   net-libs/nodejs                 \
    net-misc/bridge-utils           \
    sys-apps/yarn                   \
    sys-process/time                \
