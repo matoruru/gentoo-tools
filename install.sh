@@ -126,7 +126,9 @@ sudo ln -s /usr/bin/stack-bin /usr/bin/stack
 bash purescript.sh
 
 # install vim
-bash vim.sh
+sudo ln -sr vim.sh /usr/local/bin/vimupdater
+sudo chmod +x      /usr/local/bin/vimupdater
+vimupdater
 mkdir -p ~/.vim/.tmp/undo   \
          ~/.vim/.tmp/backup \
          ~/.vim/.tmp/swp
