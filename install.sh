@@ -61,6 +61,7 @@ sudo emerge -avuDN @world          \
    net-im/corebird                 \
    net-libs/nodejs                 \
    net-misc/bridge-utils           \
+   sys-apps/yarn                   \
    sys-process/time                \
    sys-process/htop                \
    x11-drivers/xf86-video-intel    \
