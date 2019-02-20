@@ -113,7 +113,15 @@ mkdir ~/.fonts
 find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 ( cd ~/.fonts;fc-cache -vf )
 
+# install n, the Node.js version manager
+bash n-node.sh
+
+# install yarn
+# !! after bash n-node.sh !!
+sudo npm i -g yarn
+
 # set symbolic link to stack-bin, stack and install purescript
+# !! after bash n-node.sh !!
 sudo ln -s /usr/bin/stack-bin /usr/bin/stack
 bash purescript.sh
 
