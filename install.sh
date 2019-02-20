@@ -46,7 +46,6 @@ sudo emerge -avuDN @world          \
    dev-util/ctags                  \
    dev-util/idea-community         \
    dev-vcs/git                     \
-   dev-vcs/bzr                     \
    media-gfx/feh                   \
    media-gfx/scrot                 \
    media-gfx/gnome-font-viewer     \
@@ -57,9 +56,7 @@ sudo emerge -avuDN @world          \
    media-sound/asunder             \
    net-analyzer/arp-scan           \
    net-fs/samba                    \
-   net-im/corebird                 \
    net-misc/bridge-utils           \
-   sys-apps/yarn                   \
    sys-process/time                \
    sys-process/htop                \
    x11-drivers/xf86-video-intel    \
