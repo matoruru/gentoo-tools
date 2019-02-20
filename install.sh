@@ -131,7 +131,7 @@ mkdir -p ~/.vim/.tmp/undo   \
 bash nvim.sh
 
 # enable sound
-bash soundEnable.sh
+# bash soundEnable.sh
 
 # create a link to apache's documentroot
 bash htdocs.sh
