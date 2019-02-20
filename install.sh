@@ -25,7 +25,6 @@ IS_INSTALLED=true
 
 sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
-   app-editors/neovim              \
    app-editors/nano                \
    app-emulation/qemu              \
    app-emulation/virt-manager      \
@@ -127,9 +126,6 @@ bash vim.sh
 mkdir -p ~/.vim/.tmp/undo   \
          ~/.vim/.tmp/backup \
          ~/.vim/.tmp/swp
-
-# install nvim settings
-bash nvim.sh
 
 # enable sound
 # bash soundEnable.sh
