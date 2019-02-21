@@ -26,6 +26,7 @@ IS_INSTALLED=true
 sudo emerge -avuDN @world          \
    app-laptop/laptop-mode-tools    \
    app-editors/nano                \
+   app-editors/retext              \
    app-emulation/qemu              \
    app-emulation/virt-manager      \
    app-i18n/mozc                   \
@@ -34,6 +35,7 @@ sudo emerge -avuDN @world          \
    app-misc/neofetch               \
    app-text/dictd                  \
    app-text/tree                   \
+   app-text/qpdfview               \
    dev-lang/ruby                   \
    dev-lang/lua                    \
    dev-lang/luajit                 \
@@ -48,6 +50,7 @@ sudo emerge -avuDN @world          \
    dev-vcs/git                     \
    media-gfx/feh                   \
    media-gfx/scrot                 \
+   media-gfx/pinta                 \
    media-gfx/gnome-font-viewer     \
    media-fonts/hack                \
    media-fonts/hermit              \
@@ -59,6 +62,7 @@ sudo emerge -avuDN @world          \
    net-misc/bridge-utils           \
    sys-process/time                \
    sys-process/htop                \
+   www-client/chromium             \
    x11-drivers/xf86-video-intel    \
    x11-wm/xmonad                   \
    x11-wm/xmonad-contrib           \
