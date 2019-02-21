@@ -139,9 +139,6 @@ mkdir -p ~/.vim/.tmp/undo   \
          ~/.vim/.tmp/backup \
          ~/.vim/.tmp/swp
 
-# enable sound
-# bash soundEnable.sh
-
 # create a link to apache's documentroot
 bash htdocs.sh
 
