@@ -117,17 +117,19 @@ mkdir ~/.fonts
 find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 ( cd ~/.fonts;fc-cache -vf )
 
-# install n, the Node.js version manager
+# uninstall nodejs and then install n, the Node.js version manager
+sudo emerge -C nodejs
 bash n-node.sh
 
 # install yarn and bower
 # !! after bash n-node.sh !!
-sudo npm i -g yarn bower
+export PATH=~/.npm-global/bin:$PATH
+npm i -g yarn bower
 
 # set symbolic link to stack-bin, stack and install purescript
 # !! after bash n-node.sh !!
 sudo ln -s /usr/bin/stack-bin /usr/bin/stack
-bash purescript.sh
+npm i -g purescript pulp
 
 # install vim
 sudo ln -sr vim.sh /usr/local/bin/vimupdater
