@@ -23,7 +23,7 @@ bash make-notmpfs.sh
 
 IS_INSTALLED=true
 
-sudo emerge -avuDN @world          \
+sudo emerge -avuDNq @world         \
    app-laptop/laptop-mode-tools    \
    app-editors/nano                \
    app-editors/retext              \
