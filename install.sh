@@ -118,8 +118,7 @@ mkdir ~/.fonts
 find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 ( cd ~/.fonts;fc-cache -vf )
 
-# uninstall nodejs and then install n, the Node.js version manager
-sudo emerge -C nodejs
+# install n, the Node.js version manager
 bash n-node.sh
 
 # install yarn and bower
