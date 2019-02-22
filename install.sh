@@ -47,7 +47,6 @@ sudo emerge -avuDNq @world         \
    dev-util/dialog                 \
    dev-util/ctags                  \
    dev-util/idea-community         \
-   dev-vcs/git                     \
    media-gfx/feh                   \
    media-gfx/scrot                 \
    media-gfx/pinta                 \
