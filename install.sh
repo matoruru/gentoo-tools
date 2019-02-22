@@ -13,6 +13,24 @@ function ping_failure {
 }
 ping www.github.com -c5 -i 0.2 || ping_failure
 
+if [[ ! -f "./portage.lock" ]]; then
+   # install portage files and then lock it
+   sudo mv /etc/portage/make.conf /etc/portage/make.conf.old
+   sudo ln -srf portage/make.conf /etc/portage/
+
+   sudo ln -srf portage/env         /etc/portage/
+   sudo ln -srf portage/package.env /etc/portage/
+
+   sudo mv /etc/portage/package.use/zz-autounmask /etc/portage/zz-autounmask
+   sudo rm -rf                                    /etc/portage/package.use
+   sudo ln -srf portage/package.use               /etc/portage/
+   sudo mv /etc/portage/zz-autounmask             /etc/portage/package.use/
+
+   date > portage.lock
+else
+   echo "install.sh: portage is locked!"
+fi
+
 # to enable layman overlays
 sudo layman -L
 # to add overlays
@@ -89,6 +107,9 @@ fi
 
 ping www.github.com -c5 -i 0.2 || ping_failure
 
+# install a file for todo list
+cp todolist.txt ~/
+
 # install dic
 (
    cd ~/repositories/matoruru
@@ -155,6 +176,7 @@ sudo ln -srf 40-libinput.conf /usr/share/X11/xorg.conf.d/
 sudo rc-update add dbus default
 
 # use ntpd
+sudo ln -srf ntp.conf /etc/ntp.conf
 sudo rc-update add ntpd default
 
 # kvm
