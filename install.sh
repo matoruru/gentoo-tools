@@ -130,6 +130,10 @@ sudo cp wificommands/wifioff.sh /usr/local/bin/wifioff
 sudo cp wificommands/wifion.sh  /usr/local/bin/wifion
 sudo chmod +x /usr/local/bin/wifi*
 
+# enable command for dual monitor
+sudo cp dual.fish /usr/local/bin/dual
+sudo chmod +x     /usr/local/bin/dual
+
 # install fish theme (yimmy)
 bash fish-theme.sh
 
