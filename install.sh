@@ -77,6 +77,8 @@ sudo emerge -avuDNq @world         \
    net-analyzer/arp-scan           \
    net-fs/samba                    \
    net-misc/bridge-utils           \
+   sys-apps/gptfdisk               \
+   sys-fs/dosfstools               \
    sys-process/time                \
    sys-process/htop                \
    www-client/chromium             \
@@ -88,6 +90,7 @@ sudo emerge -avuDNq @world         \
    x11-themes/capitaine-cursors    \
    x11-misc/rofi                   \
    x11-misc/compton                \
+   x11-misc/unclutter              \
    x11-misc/xmobar                 \
    x11-misc/xclip                  \
    x11-misc/wmname                 \
