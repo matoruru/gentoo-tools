@@ -10,19 +10,12 @@
     - n
     - Enter
     - Enter
-    - +4G
-    - 8200
-    - n
-    - Enter
-    - Enter
     - +50G
     - Enter
     - w
 - mkfs.vfat -F 32 /dev/sda1
-- mkfs.ext4 /dev/sda3
-- mkswap /dev/sda2
-- swapon /dev/sda2
-- mount /dev/sda3 /mnt/gentoo
+- mkfs.ext4 /dev/sda2
+- mount /dev/sda2 /mnt/gentoo
 - mkdir /mnt/gentoo/boot
 - mount /dev/sda1 /mnt/gentoo/boot
 - cd /mnt/gentoo
@@ -48,7 +41,7 @@
 - eselect profile set XX
 - nano -w /etc/fstab
     - /dev/sda1 /boot vfat noauto,noatime 0 2
-    - /dev/sda3 / ext4 noatime 0 1
+    - /dev/sda2 / ext4 noatime 0 1
 - nano -w /etc/locale.gen
 - locale-gen
 - eselect locale list
