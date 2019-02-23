@@ -5,7 +5,7 @@
     - n
     - Enter
     - Enter
-    - +256M
+    - +128M
     - EF00
     - n
     - Enter
