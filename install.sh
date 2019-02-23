@@ -45,6 +45,7 @@ sudo emerge -avuDNq @world         \
    app-laptop/laptop-mode-tools    \
    app-editors/nano                \
    app-editors/retext              \
+   app-editors/visual-studio-code  \
    app-emulation/qemu              \
    app-emulation/virt-manager      \
    app-i18n/mozc                   \
@@ -54,12 +55,14 @@ sudo emerge -avuDNq @world         \
    app-text/dictd                  \
    app-text/tree                   \
    app-text/qpdfview               \
+   app-office/libreoffice          \
    dev-lang/ruby                   \
    dev-lang/lua                    \
    dev-lang/luajit                 \
    dev-lang/perl                   \
    dev-lang/php                    \
    dev-haskell/stack-bin           \
+   dev-python/spyder               \
    dev-ruby/colorize               \
    dev-ruby/nokogiri               \
    dev-util/dialog                 \
