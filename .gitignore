@@ -1,1 +1,2 @@
 portage.lock
+portage/package.use/*zz-autounmask

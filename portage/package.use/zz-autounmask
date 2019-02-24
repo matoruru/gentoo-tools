@@ -16,6 +16,16 @@
 # required by net-fs/samba-4.8.6-r2::gentoo
 # required by net-fs/samba (argument)
 >=sys-libs/tevent-0.9.37 python
+# required by app-editors/retext-7.0.3::gentoo
+# required by app-editors/retext (argument)
+>=dev-python/PyQt5-5.10.1-r1 webengine
+# required by dev-python/spyder-4.0.0_beta1::gentoo
+# required by dev-python/spyder (argument)
+>=dev-python/QtPy-1.4.0-r1 webengine
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by app-editors/retext-7.0.3::gentoo
+# required by app-editors/retext (argument)
+>=dev-qt/qtwebengine-5.11.3 widgets
 # required by app-misc/neofetch-5.0.0::gentoo[X]
 # required by app-misc/neofetch (argument)
 >=www-client/w3m-0.5.3_p20180125 imlib
@@ -30,10 +40,3 @@
 # required by app-editors/retext-7.0.3::gentoo
 # required by app-editors/retext (argument)
 >=dev-python/markdown-2.6.8 pygments
-# required by app-editors/retext-7.0.3::gentoo
-# required by app-editors/retext (argument)
->=dev-python/PyQt5-5.10.1-r1 webengine
-# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
-# required by app-editors/retext-7.0.3::gentoo
-# required by app-editors/retext (argument)
->=dev-qt/qtwebengine-5.11.3 widgets
