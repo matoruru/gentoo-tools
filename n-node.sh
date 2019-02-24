@@ -7,7 +7,3 @@ sudo n latest
 
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-
-# remove modifying .bashrc by n
-cd ~/repositories/matoruru/dotfiles
-git checkout .bashrc

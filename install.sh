@@ -160,10 +160,17 @@ npm i -g yarn bower
 sudo ln -s /usr/bin/stack-bin /usr/bin/stack
 npm i -g purescript pulp
 
+(
+   # remove modifying .bashrc by n
+   cd ~/repositories/matoruru/dotfiles
+   git checkout .bashrc
+)
+
+
 # install vim
 sudo ln -sr vim.sh /usr/local/bin/vimupdater
 sudo chmod +x      /usr/local/bin/vimupdater
-vimupdater
+bash vim.sh
 mkdir -p ~/.vim/.tmp/undo   \
          ~/.vim/.tmp/backup \
          ~/.vim/.tmp/swp
