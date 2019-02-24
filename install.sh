@@ -195,9 +195,5 @@ sudo rc-update add dbus default
 sudo ln -srf ntp.conf /etc/ntp.conf
 sudo rc-update add ntpd default
 
-# kvm
-sudo gpasswd -a matoruru kvm
-sudo usermod -aG libvirt matoruru
-sudo rc-update add libvirtd default
-sudo cp /etc/libvirt/libvirtd.conf /etc/libvirt/libvirtd.conf.old
-sudo ln -rfs libvirtd.conf /etc/libvirt/
+# create link to vscode
+sudo ln -sr /usr/bin/visual-studio-code /usr/local/bin/vscode
