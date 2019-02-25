@@ -152,8 +152,6 @@ find fonts/ -name "*.tar.bz2"|xargs -n 1 -I XXX tar vxf XXX -C ~/.fonts/
 # and intall tools related to purescript
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/.nodebrew/current/bin:$PATH
-mkdir ~/.npm-global
-npm config set prefix '~/.npm-global'
 bash nodebrew.sh
 npm i -g yarn bower purescript pulp
 sudo ln -s /usr/bin/stack-bin /usr/bin/stack
